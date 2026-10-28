@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zahrah Amalia Auto Gallery - Premium Showroom</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- HEADER / NAVBAR -->
+  <header>
+    <div class="nav-container">
+      <a href="#" class="logo">ZAHRAH AMALIA <span>SHOWROOM</span></a>
+      <div class="nav-stats" id="totalCarsBadge">Memuat data...</div>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="hero">
+    <h1>Koleksi Mobil Premium Zahrah Amalia</h1>
+    <p>Jelajahi berbagai pilihan mobil berkualitas tinggi dengan tampilan interaktif.</p>
+  </section>
+
+  <!-- CONTROLS & FILTER SECTION -->
+  <section class="controls-section">
+    <div class="search-box">
+      <input type="text" id="searchInput" placeholder="Cari nama atau brand mobil...">
+    </div>
+    <div class="filter-box">
+      <select id="brandFilter">
+        <option value="ALL">Semua Brand</option>
+      </select>
+      <select id="sortFilter">
+        <option value="DEFAULT">Urutan Standar</option>
+        <option value="LOW">Harga: Terendah ke Tertinggi</option>
+        <option value="HIGH">Harga: Tertinggi ke Terendah</option>
+      </select>
+    </div>
+  </section>
+
+  <!-- MAIN GALLERY CONTAINER -->
+  <main class="gallery-container">
+    <div id="carGrid" class="car-grid">
+      <!-- State Loading Awal -->
+      <div class="state-container">
+        <div class="spinner"></div>
+        <p>Mengambil data dari API DNCC...</p>
+      </div>
+    </div>
+  </main>
+
+  <!-- MODAL DETAIL MOBIL -->
+  <div class="modal-overlay" id="carModal">
+    <div class="modal-content">
+      <button class="close-modal" id="closeModal">&times;</button>
+      <div id="modalBody">
+        <!-- Dihasilkan secara dinamis via Vanilla JS -->
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>&copy; 2026 Zahrah Amalia Auto Gallery - Tugas Akhir Kelas Frontend DNCC</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
